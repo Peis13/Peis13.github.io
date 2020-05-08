@@ -1,0 +1,491 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* COMMON */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  width: 50%;
+  height: 3px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 50%;
+  background-color: #caff49;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.inline-list li {
+  padding: 0 5px;
+  display: inline-block;
+}
+
+/* Margin & padding */
+.section {
+  padding: 40px 0;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+/* Fine Margin & padding */
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+/* Fine Text */
+
+/* FINE COMMON */
+
+/*           HEADER           */
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 70px;
+  padding: 0 20px;
+  font-size: 20px;
+  box-shadow: 0 5px 30px gray;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.navbar i {
+  font-size: 25px;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #caff49;
+  text-decoration: none;
+}
+
+.navbar.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav-menu */
+.side-fixed {
+  z-index: 1;
+  width: 0;
+  height: calc(100% - 70px);
+  overflow-x: hidden;
+  background-color: #000;
+  transition: 0.5s;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+}
+
+/* NOTE: classe da aggiungere */
+.openW {
+  width: 300px;
+}
+
+.nav-menu li {
+  width: 200px;  /* NOTE: Larghezza fissa per evitare che al restringimento della sidebar gli elementi vadano su più righe */
+  padding: 20px 20px;
+}
+
+.nav-menu i {
+  padding-right: 10px;
+}
+/* Fine Nav-menu */
+
+/* Social-menu */
+.social-menu li {
+  padding: 0 20px;
+  border-left: 1px solid #fff;
+}
+
+.social-menu li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.social-menu li:last-child {
+  padding-right: 0;
+}
+/* Fine Social-menu */
+
+/* Burger-menu */
+.burger-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.burger-menu:hover .bar1,
+.burger-menu:hover .bar2,
+.burger-menu:hover .bar3 {
+  background-color: #caff49;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Fine Burger-menu */
+
+/* Hero */
+.hero {
+  height: 500px;
+  margin-top: 70px;
+  background-image: url(../img/banner.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+/* Fine Hero */
+/* FINE NAVBAR */
+/*           FINE HEADER           */
+
+/*           MAIN           */
+#preamble p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+.intro > .caption {
+  font-size: 22px;
+}
+
+
+/* Modelli */
+#modelli .intro {
+  padding: 0 20px;
+}
+
+#modelli .cta span {
+  border-bottom: 2px solid #50b8cf;
+  display: inline-block;
+  margin-top: 70px;
+}
+
+#modelli .cta i {
+  color: #50b8cf;
+}
+
+#modelli .logo img {
+  width: 300px;
+}
+
+.modello {
+  margin-bottom: 20px;
+}
+
+.modello:last-child {
+  margin-bottom: 0;
+}
+
+/* Occhiali */
+.occhiali {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  box-shadow: 0 5px 30px gray;
+  position: relative;
+}
+
+/* slider */
+/* .slider {
+  min-width: 100%;
+  position: absolute;
+  bottom: 15%;
+}
+
+.freccia {
+  font-size: 30px;
+}
+
+.freccia.sinistra {
+  position: absolute;
+  left: 10%;
+}
+
+.freccia.destra {
+  position: absolute;
+  right: 10%;
+} */
+/* fine slider */
+
+/* modello singolo */
+.item {
+  min-width: 100%;
+  padding-bottom: 50px;
+}
+
+.item .occhiale img {
+  width: 60%;
+}
+
+.underline {
+  height: 4px;
+  width: 60%;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background-color: #50b8cf;
+}
+
+.type {
+  color: #b4b4b4;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.lens {
+  font-size: 14px;
+}
+
+.info {
+  display: block;
+  margin-top: 10px;
+}
+
+.info .btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.info .btn {
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #50b8cf;
+}
+/* fine modello singolo */
+/* Fine Occhiali */
+/* Fine Modelli */
+
+/* Store */
+#store hr {
+  width: 30%;
+}
+
+.fa-chevron-right {
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.4s;
+}
+
+/* NOTE: classe da aggiungere */
+.rotate {
+  transform: rotate(180deg);
+}
+
+.province {
+  width: 0;
+  margin: auto;
+  height: 0;
+  margin-bottom: 40px;
+  overflow: hidden;
+  transition: width 1s, height 0.6s;  /* NOTE: transition: width 1s, height 0.6s; */
+}
+
+/* NOTE: classe da aggiungere */
+.openH {
+  width: 100%;
+  height: 100%;
+}
+
+.province li {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.province li,
+.province li a {
+  color: #50b8cf;
+}
+/* Fine Store */
+/*           FINE MAIN           */
+
+/*           FOOTER           */
+footer {
+  color: #fff;
+  background-color: #000;
+}
+
+footer hr {
+  height: 2px;
+  background-color: #fff;
+}
+
+.brand {
+  letter-spacing: 3px;
+}
+
+.contact li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.powered {
+  opacity: 0.4;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.author {
+  color: inherit;
+  text-decoration: underline;
+}
+/*           FINE FOOTER           */
+
+/*           MEDIA QUERY           */
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /*           MAIN           */
+  /* Modelli */
+  .modello {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  #modelli .intro {
+    padding: 0 20px 0 0;
+    flex-grow: 1;
+    max-width: 40%;
+  }
+
+  #modelli .cta i {
+    transform: rotate(-90deg);
+  }
+
+  .occhiali {
+    flex-basis: 60%;
+  }
+  /* Fine Modelli */
+
+  /* Store */
+  .province {
+    transition: width 0.6s, height 0.2s;
+  }
+  /* Fine Store */
+  /*           FINE MAIN           */
+
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  /*           HEADER           */
+  /* NAVBAR */
+  /* Nav-menu */
+  .side-fixed {
+    z-index: 0;
+    width: auto;
+    height: auto;
+    overflow-x: auto;
+    background-color: transparent;
+    transition: 0s;
+    position: static;
+  }
+
+  .nav-menu li {
+    width: auto;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  /* Burger-menu */
+  .burger-menu {
+    display: none;
+  }
+  /* Fine Burger-menu */
+  /* FINE NAVBAR */
+  /*           FINE HEADER           */
+
+  /*           MAIN           */
+  /*           FINE MAIN           */
+
+}
+/*           FINE MEDIA QUERY           */
